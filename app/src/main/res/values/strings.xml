@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Sofra</string>
+
+    //AskLoginActivity Strings
+    <string name="food_sale">بيع طعام</string>
+    <string name="food_order">طلب طعام</string>
+    //ClientHomeActivity Strings
+    <string name="toolbar_open">Open</string>
+    <string name="toolbar_close">Close</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_login_btn">تسجيل دخول</string>
+    <string name="Login_register_Btn">انشاء حساب جديد</string>
+    <string name="Login_password_et">كلمه المرور</string>
+    <string name="Login_name_et">اسم المستخدم</string>
+    <string name="client_register_name_et">اسم المستخدم</string>
+    <string name="client_register_mail_et">البريد الالكتروني</string>
+    <string name="client_register_phone_et">الجوال</string>
+    <string name="client_register_home_et">وصف السكن</string>
+
+    <string name="restaurant_register_next_btn">متابعه</string>
+    <string name="restaurant_register_name_btn">اسم المطعم</string>
+    <string name="login_Forget_password_tv"><u>نسيت كلمه المرور ؟</u></string>
+    <string name="spn_city">المدينه</string>
+    <string name="spn_region">الحي</string>
+    //Restaurant_Register_Fragment
+    <string name="spn_categories">التصنيفات</string>
+    <string name="restaurant_register_et_delivery">رسوم التوصيل</string>
+    <string name="restaurant_register_et_min_order">الحد الادنى للطلب</string>
+    <string name="restaurant_register_checkbox_data">بيانات التواصل</string>
+    <string name="restaurant_register_et_phone">الجوال</string>
+    <string name="restaurant_register_et_whatsup">واتس اب</string>
+    <string name="restaurant_register_register_btn">تسجيل</string>
+    <string name="restaurant_register_et_image">صوره المتجر</string>
+    //Forget_Password_Fragment
+    <string name="forget_password_tv">نسيت كلمه المرور</string>
+    <string name="forget_password_tv_email">برجاء ادخال بريدك الالكتروني</string>
+    <string name="forge_password_btn_send">ارسال</string>
+    //New_Password_Fragment
+    <string name="new_password_tv_code">برجاء ادخال الكود المرسل اليكم</string>
+    <string name="new_password_tv_password">ادخل كلمه المرور الجديدة</string>
+    <string name="new_password_et_password">ادخال كلمه المرور الجديدة</string>
+    <string name="new_password_et_rePassword">اعاده ادخال كلمه المرور الجديدة</string>
+</resources>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.clientCycle.ClientProfileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_8"
+                android:layout_marginTop="@dimen/dimen_24"
+                android:layout_marginEnd="@dimen/dimen_24"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layoutDirection="rtl"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/Client_Profile_Civ_product_Image"
+                        android:layout_width="@dimen/dimen_74"
+                        android:layout_height="@dimen/dimen_74"
+                        android:layout_gravity="center"
+                        android:src="@drawable/khalid_ciricle"
+                        app:civ_border_color="#C7E5C2"
+                        app:civ_border_width="2dp" />
+
+                    <Button
+                        android:id="@+id/Client_Profile_Btn_Add_Photo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen_8"
+                        android:background="@drawable/button_custom_white"
+                        android:drawableStart="@drawable/ic_add_black"
+                        android:fontFamily="@font/cairo"
+                        android:text="أضف صوره"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/Client_Profile_Et_Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_42"
+                    android:layout_marginTop="@dimen/dimen_16"
+                    android:background="@drawable/edittext_rounded_corners"
+                    android:fontFamily="@font/cairo"
+                    android:hint="@string/client_register_name_et"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/Client_Profile_Et_Email"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_42"
+                    android:layout_marginTop="@dimen/dimen_16"
+                    android:background="@drawable/edittext_rounded_corners"
+                    android:fontFamily="@font/cairo"
+                    android:hint="@string/client_register_mail_et"
+                    android:inputType="textEmailAddress" />
+
+                <EditText
+                    android:id="@+id/Client_Profile_Et_Phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_42"
+                    android:layout_marginTop="@dimen/dimen_16"
+                    android:background="@drawable/edittext_rounded_corners"
+                    android:fontFamily="@font/cairo"
+                    android:hint="@string/client_register_phone_et"
+                    android:textDirection="rtl" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_42"
+                    android:layout_marginTop="@dimen/dimen_16"
+                    android:background="@drawable/edittext_rounded_corners">
+
+                    <Spinner
+                        android:id="@+id/Client_Profile_Spn_City"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_42"
+                        android:focusableInTouchMode="false"
+                        android:layoutDirection="rtl"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_42"
+                    android:layout_marginTop="@dimen/dimen_16"
+                    android:background="@drawable/edittext_rounded_corners">
+
+                    <Spinner
+                        android:id="@+id/Client_Profile_Spn_Region"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:focusableInTouchMode="true"
+                        android:layoutDirection="rtl"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/Client_Profile_Et_Home"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_42"
+                    android:layout_marginTop="@dimen/dimen_16"
+                    android:background="@drawable/edittext_rounded_corners"
+                    android:hint="@string/client_register_home_et"
+                    android:inputType="text"
+                    android:textAlignment="viewStart"
+
+                    />
+
+                <EditText
+                    android:id="@+id/Client_Profile_Et_Password"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_42"
+                    android:layout_marginTop="@dimen/dimen_16"
+                    android:background="@drawable/edittext_rounded_corners"
+                    android:hint=" كلمه المرور"
+                    android:inputType="textPassword"
+                    android:textAlignment="viewStart" />
+
+                <EditText
+                    android:id="@+id/Client_Profile_Et_RePassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_42"
+                    android:layout_marginTop="@dimen/dimen_16"
+                    android:background="@drawable/edittext_rounded_corners"
+                    android:hint=" تاكيد كلمه المرور"
+                    android:inputType="textPassword"
+                    android:textAlignment="viewStart" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dimen_8">
+
+                <Button
+                    android:id="@+id/Client_Profile_Btn_Register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="@dimen/dimen_24"
+                    android:layout_marginTop="@dimen/dimen_8"
+                    android:layout_marginEnd="@dimen/dimen_24"
+                    android:layout_marginBottom="@dimen/dimen_24"
+                    android:background="@drawable/button_custom_green"
+                    android:fontFamily="@font/cairo"
+                    android:text="تسجيل"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

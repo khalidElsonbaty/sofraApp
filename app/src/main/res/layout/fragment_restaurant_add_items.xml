@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.restaurantCycle.RestaurantAddItemsFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/Restaurant_Add_Items_RecyclerView_Products"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/Restaurant_Add_Items_Rl_Add_Product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#424242"
+        android:layoutDirection="rtl">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_42"
+            android:layout_centerInParent="true"
+            android:drawableStart="@drawable/ic_library_add"
+            android:fontFamily="@font/cairo"
+            android:text=" أضف منتج جديد"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/dimen_text_25" />
+    </RelativeLayout>
+</RelativeLayout>

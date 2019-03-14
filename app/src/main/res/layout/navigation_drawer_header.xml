@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layoutDirection="rtl"
+    android:orientation="horizontal"
+    android:id="@+id/Client_Home_DrawerLayout_Header"
+    android:background="@color/colorPrimaryDark"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.2"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/Client_Home_Header_Civ_product_Image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_gravity="center"
+            android:src="@drawable/khalid_ciricle"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_8">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:layout_weight="2"
+            android:fontFamily="@font/details_font"
+            android:text="مرحبا بك ..." />
+
+        <TextView
+            android:id="@+id/Client_Home_Header_Tv_Name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dimen_4"
+            android:layout_weight="1"
+            android:fontFamily="@font/details_font"
+            android:padding="@dimen/dimen_4"
+            android:text="تفضل بتسجيل الدخول"
+            android:textDirection="rtl"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.3"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/Client_Home_Header_Iv_Login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimen_34"
+            android:src="@drawable/ic_login_setting" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

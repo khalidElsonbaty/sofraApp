@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    tools:context=".ui.fragment.clientCycle.RestaurantDetailsFragment">
+
+    <LinearLayout
+        android:id="@+id/Restaurant_Details_Ll_Restaurant"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginEnd="@dimen/dimen_8"
+        android:layoutDirection="rtl"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/dimen_4"
+        android:paddingTop="@dimen/dimen_4"
+        android:paddingEnd="@dimen/dimen_4"
+        android:paddingBottom="@dimen/dimen_4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/Restaurant_Details_ImageView_Restaurant"
+                android:layout_width="@dimen/dimen_74"
+                android:layout_height="@dimen/dimen_74"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Restaurant_Details_Tv_Restaurant_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/details_font" />
+
+            <TextView
+                android:id="@+id/Restaurant_Details_Tv_Restaurant_Category"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/dimen_4"
+                android:layout_weight="1"
+                android:fontFamily="@font/details_font" />
+
+            <RatingBar
+                android:id="@+id/Restaurant_Details_RatingBar_Restaurant"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:paddingTop="@dimen/dimen_4"
+                android:paddingBottom="@dimen/dimen_8"
+                android:stepSize="0.1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Restaurant_Details_Tv_Restaurant_Available"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/ic_check_circle_green"
+                android:fontFamily="@font/details_font"
+                android:textColor="@color/green_availability"
+                android:textSize="@dimen/dimen_text_20"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Restaurant_Details_Tv_Restaurant_Delivery_Period"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/details_font"
+                    android:text="الحد الادنى للتوصيل"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/Restaurant_Details_Tv_Restaurant_delivery_period_Result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/details_font" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Restaurant_Details_Tv_Restaurant_delivery_cost"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/details_font"
+                    android:text="رسوم التوصيل" />
+
+                <TextView
+                    android:id="@+id/Restaurant_Details_Tv_Restaurant_delivery_cost_Result"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/details_font" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/Restaurant_Details_TabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Restaurant_Details_Ll_Restaurant"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layoutDirection="ltr"
+        app:tabGravity="fill"
+        app:tabMode="fixed" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/Restaurant_Details_ViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Restaurant_Details_TabLayout"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="0dp"
+        android:layoutDirection="ltr" />
+
+
+</RelativeLayout>

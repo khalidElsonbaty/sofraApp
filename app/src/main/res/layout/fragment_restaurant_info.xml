@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.clientCycle.RestaurantInfoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginEnd="@dimen/dimen_16"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="الحاله"
+            android:textSize="@dimen/dimen_text_16"
+            android:fontFamily="@font/details_font"
+            android:paddingStart="@dimen/dimen_8"
+            android:paddingEnd="@dimen/dimen_8"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/Restaurant_Info_Tv_Available"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textDirection="rtl"
+            android:textSize="@dimen/dimen_text_24"
+            android:textColor="@color/green_availability"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/ic_check_circle_green"
+            android:fontFamily="@font/details_font"
+            android:paddingStart="@dimen/dimen_8"
+            android:paddingEnd="@dimen/dimen_8"
+            android:paddingBottom="@dimen/dimen_2"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_2"
+        android:layout_marginStart="@dimen/dimen_24"
+        android:layout_marginEnd="@dimen/dimen_24"
+        android:background="@color/view_color" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginEnd="@dimen/dimen_16"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="المدينه"
+            android:textSize="@dimen/dimen_text_16"
+            android:fontFamily="@font/details_font"
+            android:paddingStart="@dimen/dimen_8"
+            android:paddingEnd="@dimen/dimen_8"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/Restaurant_Info_Tv_City"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/dimen_text_16"
+            android:fontFamily="@font/details_font"
+            android:paddingStart="@dimen/dimen_8"
+            android:paddingEnd="@dimen/dimen_8"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_2"
+        android:layout_marginStart="@dimen/dimen_24"
+        android:layout_marginEnd="@dimen/dimen_24"
+        android:background="@color/view_color" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginEnd="@dimen/dimen_16"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="الحي"
+            android:textSize="@dimen/dimen_text_16"
+            android:fontFamily="@font/details_font"
+            android:paddingStart="@dimen/dimen_8"
+            android:paddingEnd="@dimen/dimen_8"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/Restaurant_Info_Tv_Region"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/dimen_text_16"
+            android:fontFamily="@font/details_font"
+            android:paddingStart="@dimen/dimen_8"
+            android:paddingEnd="@dimen/dimen_8"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_2"
+        android:layout_marginStart="@dimen/dimen_24"
+        android:layout_marginEnd="@dimen/dimen_24"
+        android:background="@color/view_color" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginEnd="@dimen/dimen_16"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="الحد الأدنى"
+            android:textSize="@dimen/dimen_text_16"
+            android:fontFamily="@font/details_font"
+            android:paddingStart="@dimen/dimen_8"
+            android:paddingEnd="@dimen/dimen_8"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/Restaurant_Info_Tv_deliveryPeriod"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/dimen_text_16"
+            android:fontFamily="@font/details_font"
+            android:paddingStart="@dimen/dimen_8"
+            android:paddingEnd="@dimen/dimen_8"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_2"
+        android:layout_marginStart="@dimen/dimen_24"
+        android:layout_marginEnd="@dimen/dimen_24"
+        android:background="@color/view_color" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginEnd="@dimen/dimen_16"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="رسوم التوصيل"
+            android:textSize="@dimen/dimen_text_16"
+            android:fontFamily="@font/details_font"
+            android:paddingStart="@dimen/dimen_8"
+            android:paddingEnd="@dimen/dimen_8"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/Restaurant_Info_Tv_deliveryCost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/dimen_text_16"
+            android:fontFamily="@font/details_font"
+            android:paddingStart="@dimen/dimen_8"
+            android:paddingEnd="@dimen/dimen_8"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_2"
+        android:layout_marginStart="@dimen/dimen_24"
+        android:layout_marginEnd="@dimen/dimen_24"
+        android:background="@color/view_color" />
+
+
+</LinearLayout>

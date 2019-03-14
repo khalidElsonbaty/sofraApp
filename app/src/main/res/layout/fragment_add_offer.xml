@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    tools:context=".ui.fragment.restaurantCycle.AddOfferFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/dimen_8"
+                android:layout_marginTop="@dimen/dimen_24"
+                android:layout_marginEnd="@dimen/dimen_24"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/Add_Product_Et_Product_Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_42"
+                    android:layout_marginTop="@dimen/dimen_16"
+                    android:background="@drawable/edittext_rounded_corners"
+                    android:fontFamily="@font/cairo"
+                    android:hint="اسم العرض"
+                    android:inputType="text"
+                    android:padding="@dimen/dimen_4"
+                    android:textAlignment="viewStart" />
+
+                <EditText
+                    android:id="@+id/Add_Product_Et_Product_Description"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_82"
+                    android:layout_marginTop="@dimen/dimen_16"
+                    android:background="@drawable/edittext_rounded_corners"
+                    android:fontFamily="@font/cairo"
+                    android:hint="وصف مختصر"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/dimen_4"
+                    android:textAlignment="viewStart" />
+
+                <EditText
+                    android:id="@+id/Add_Product_Et_Product_Price"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_42"
+                    android:layout_marginTop="@dimen/dimen_16"
+                    android:background="@drawable/edittext_rounded_corners"
+                    android:fontFamily="@font/cairo"
+                    android:hint="السعر"
+                    android:padding="@dimen/dimen_4"
+                    android:textAlignment="viewStart" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/Add_Product_Et_product_Time"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_42"
+                        android:layout_marginTop="@dimen/dimen_16"
+                        android:layout_marginEnd="@dimen/dimen_8"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_rounded_corners"
+                        android:fontFamily="@font/cairo"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:hint="مدة الى"
+                        android:drawableStart="@drawable/ic_date"
+                        android:padding="@dimen/dimen_4"
+                        android:textAlignment="viewStart" />
+
+                    <EditText
+                        android:id="@+id/Add_Product_Et_product_Time_End"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_42"
+                        android:layout_marginStart="@dimen/dimen_8"
+                        android:layout_marginTop="@dimen/dimen_16"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_rounded_corners"
+                        android:fontFamily="@font/cairo"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:hint="مدة من"
+                        android:drawableStart="@drawable/ic_date"
+                        android:padding="@dimen/dimen_4"
+                        android:textAlignment="viewStart" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_16"
+                    android:gravity="center"
+                    android:layoutDirection="rtl"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cairo"
+                        android:text="اضف صورة المنتجر  :" />
+
+                    <ImageView
+                        android:id="@+id/Add_Product_Iv_Product_Image"
+                        android:layout_width="@dimen/dimen_74"
+                        android:layout_height="@dimen/dimen_74"
+                        android:layout_marginStart="@dimen/dimen_16"
+                        android:src="@drawable/ic_add_to_photos" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dimen_8">
+
+                <Button
+                    android:id="@+id/Add_Product_Btn_Add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="@dimen/dimen_24"
+                    android:layout_marginTop="@dimen/dimen_8"
+                    android:layout_marginEnd="@dimen/dimen_24"
+                    android:layout_marginBottom="@dimen/dimen_24"
+                    android:background="@drawable/button_custom_green"
+                    android:fontFamily="@font/cairo"
+                    android:text="أضف"
+                    android:textColor="@color/white_color"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

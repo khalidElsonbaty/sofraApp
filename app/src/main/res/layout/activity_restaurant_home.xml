@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/Restaurant_Home_DrawerLayout"
+    android:layoutDirection="rtl"
+    tools:context=".ui.activity.RestaurantHomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/Restaurant_Home_ToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFD13D">
+
+            <TextView
+                android:id="@+id/Restaurant_Home_Toolbar_Tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_8"
+                android:layout_marginEnd="@dimen/dimen_8"
+                android:gravity="center" />
+
+
+        </android.support.v7.widget.Toolbar>
+
+        <FrameLayout
+            android:id="@+id/Restaurant_Home_Fragment_Container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/Restaurant_Home_ToolBar">
+
+        </FrameLayout>
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/Restaurant_Home_Navigation_Drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/restaurant_navigation_drawer_menu" />
+
+</android.support.v4.widget.DrawerLayout>

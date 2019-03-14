@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_background"
+    tools:context=".ui.activity.AskLoginActivity">
+
+    <ImageView
+        android:id="@+id/Ask_Login_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="160dp"
+        android:src="@drawable/sofra_logo" />
+
+    <Button
+        android:id="@+id/Ask_Login_Client_Btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_below="@+id/Ask_Login_logo"
+        android:layout_marginStart="@dimen/dimen_24"
+        android:layout_marginTop="@dimen/dimen_66"
+        android:layout_marginEnd="@dimen/dimen_24"
+        android:background="@drawable/button_custom_yellow"
+        android:fontFamily="@font/cairo"
+        android:text="@string/food_order"
+        android:textSize="@dimen/dimen_24" />
+
+    <Button
+        android:id="@+id/Ask_Login_Restaurant_Btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_below="@+id/Ask_Login_Client_Btn"
+        android:layout_marginStart="@dimen/dimen_24"
+        android:layout_marginTop="@dimen/dimen_24"
+        android:layout_marginEnd="@dimen/dimen_24"
+        android:background="@drawable/button_custom_yellow"
+        android:fontFamily="@font/cairo"
+        android:text="@string/food_sale"
+        android:textSize="@dimen/dimen_text_24" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/cairo"
+        android:gravity="center"
+        android:text="Khalid El-sonbaty product..."
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/dimen_text_8" />
+
+
+</RelativeLayout>
